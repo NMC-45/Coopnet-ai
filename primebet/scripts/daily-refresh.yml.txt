@@ -1,0 +1,40 @@
+name: Daily fixtures refresh
+
+# Keeps data/fixtures.json fresh so the PrimeBet site always shows
+# up-to-date, "live" markets. Runs every day and can be triggered manually.
+
+on:
+  schedule:
+    # 06:12 UTC daily (off the top of the hour on purpose)
+    - cron: '12 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate fixtures
+        run: node primebet/scripts/fetch-fixtures.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain primebet/data/fixtures.json)" ]]; then
+            git add primebet/data/fixtures.json
+            git commit -m "chore: daily fixtures refresh"
+            git push
+          else
+            echo "No fixture changes to commit."
+          fi

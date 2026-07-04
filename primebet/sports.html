@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports &amp; Live Odds — PrimeBet</title>
+  <meta name="description" content="Browse live and upcoming fixtures across football, basketball and tennis with real-time odds on PrimeBet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Live ticker -->
+  <div class="ticker" aria-label="Live odds ticker">
+    <div class="ticker__label"><span class="dot"></span> Live</div>
+    <div class="ticker__track" id="tickerTrack"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand">
+          <span class="brand__mark">P</span>Prime<span>Bet</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html">Home</a>
+          <a href="sports.html" class="active">Sports</a>
+          <a href="promos.html">Promotions</a>
+          <a href="index.html#how">How it works</a>
+        </div>
+        <div class="nav__actions">
+          <a href="#" class="btn btn-ghost">Log in</a>
+          <a href="#" class="btn btn-primary">Join &amp; Bet</a>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sportsbook -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Sportsbook</p>
+          <h2>Live &amp; upcoming markets</h2>
+        </div>
+        <p class="text-dim" id="lastUpdated">Loading odds…</p>
+      </div>
+
+      <div class="sports-tabs" id="sportsTabs"><!-- tabs injected --></div>
+
+      <div class="match-list" id="matchList">
+        <p class="text-dim">Loading fixtures…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand__mark">P</span>Prime<span>Bet</span></a>
+          <p class="about">Live sports betting with real-time odds. PrimeBet is a demonstration project — not a real bookmaker. Please bet responsibly.</p>
+        </div>
+        <div>
+          <h4>Sports</h4>
+          <ul>
+            <li><a href="sports.html">Football</a></li>
+            <li><a href="sports.html">Basketball</a></li>
+            <li><a href="sports.html">Tennis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="promos.html">Promotions</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Responsible Gaming</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="rg-note">
+          <span class="age-badge">18+</span>
+          <span>Gambling can be addictive. Play responsibly. If you need help, contact your local support service.</span>
+        </div>
+        <div>© <span data-year>2026</span> PrimeBet. Demo project.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/ticker.js"></script>
+  <script src="js/sports.js"></script>
+</body>
+</html>

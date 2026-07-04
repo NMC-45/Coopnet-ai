@@ -1,0 +1,152 @@
+{
+  "updated": "2026-07-04T14:48:44.917Z",
+  "sports": [
+    {
+      "key": "football",
+      "name": "Football",
+      "icon": "⚽",
+      "fixtures": [
+        {
+          "id": "fb-1001",
+          "league": "Premier League",
+          "home": "Arsenal",
+          "away": "Manchester City",
+          "start": "2026-07-04T14:03:44.918Z",
+          "status": "live",
+          "minute": 63,
+          "score": {
+            "home": 1,
+            "away": 2
+          },
+          "odds": {
+            "home": 3.35,
+            "draw": 3.53,
+            "away": 2.02
+          }
+        },
+        {
+          "id": "fb-1002",
+          "league": "La Liga",
+          "home": "Real Madrid",
+          "away": "Sevilla",
+          "start": "2026-07-04T16:18:44.918Z",
+          "status": "upcoming",
+          "minute": null,
+          "score": {
+            "home": 0,
+            "away": 0
+          },
+          "odds": {
+            "home": 1.62,
+            "draw": 3.94,
+            "away": 6.18
+          }
+        },
+        {
+          "id": "fb-1003",
+          "league": "Serie A",
+          "home": "Inter Milan",
+          "away": "Juventus",
+          "start": "2026-07-05T14:48:44.918Z",
+          "status": "upcoming",
+          "minute": null,
+          "score": {
+            "home": 0,
+            "away": 0
+          },
+          "odds": {
+            "home": 2.14,
+            "draw": 3.2,
+            "away": 3.22
+          }
+        }
+      ]
+    },
+    {
+      "key": "basketball",
+      "name": "Basketball",
+      "icon": "🏀",
+      "fixtures": [
+        {
+          "id": "bk-2001",
+          "league": "NBA",
+          "home": "LA Lakers",
+          "away": "Boston Celtics",
+          "start": "2026-07-04T14:28:44.919Z",
+          "status": "live",
+          "minute": null,
+          "score": {
+            "home": 88,
+            "away": 84
+          },
+          "odds": {
+            "home": 2.01,
+            "draw": null,
+            "away": 1.86
+          }
+        },
+        {
+          "id": "bk-2002",
+          "league": "EuroLeague",
+          "home": "Real Madrid",
+          "away": "Fenerbahce",
+          "start": "2026-07-04T19:48:44.919Z",
+          "status": "upcoming",
+          "minute": null,
+          "score": {
+            "home": 0,
+            "away": 0
+          },
+          "odds": {
+            "home": 1.81,
+            "draw": null,
+            "away": 2.22
+          }
+        }
+      ]
+    },
+    {
+      "key": "tennis",
+      "name": "Tennis",
+      "icon": "🎾",
+      "fixtures": [
+        {
+          "id": "tn-3001",
+          "league": "Wimbledon",
+          "home": "C. Alcaraz",
+          "away": "J. Sinner",
+          "start": "2026-07-04T13:48:44.919Z",
+          "status": "live",
+          "minute": null,
+          "score": {
+            "home": 2,
+            "away": 1
+          },
+          "odds": {
+            "home": 1.74,
+            "draw": null,
+            "away": 2.06
+          }
+        },
+        {
+          "id": "tn-3002",
+          "league": "Wimbledon",
+          "home": "N. Djokovic",
+          "away": "A. Zverev",
+          "start": "2026-07-04T17:48:44.919Z",
+          "status": "upcoming",
+          "minute": null,
+          "score": {
+            "home": 0,
+            "away": 0
+          },
+          "odds": {
+            "home": 1.66,
+            "draw": null,
+            "away": 2.73
+          }
+        }
+      ]
+    }
+  ]
+}
